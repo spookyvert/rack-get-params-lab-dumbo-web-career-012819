@@ -16,7 +16,7 @@ class Application
     else
       resp.write "Path Not Found"
     end
-    if req.path.match(/cart)
+    if req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}\n"
       end
