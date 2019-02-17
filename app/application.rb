@@ -19,6 +19,9 @@ class Application
     if req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}\n"
+      else 
+        resp.write "You don't have this in your cart"
+        
       end
       
     end
